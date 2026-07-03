@@ -82,7 +82,8 @@ const authSlice = createSlice({
         // save tokens
         try {
           localStorage.setItem('refreshToken', payload.refreshToken);
-          setCookie('accessToken', payload.accessToken);
+          const rawAccessToken = payload.accessToken.replace(/^Bearer\s+/i, '');
+          setCookie('accessToken', rawAccessToken);
         } catch (e) {}
         state.user = payload.user;
         state.isAuth = true;
@@ -103,7 +104,8 @@ const authSlice = createSlice({
       if (payload && payload.success) {
         try {
           localStorage.setItem('refreshToken', payload.refreshToken);
-          setCookie('accessToken', payload.accessToken);
+          const rawAccessToken = payload.accessToken.replace(/^Bearer\s+/i, '');
+          setCookie('accessToken', rawAccessToken);
         } catch (e) {}
         state.user = payload.user;
         state.isAuth = true;
