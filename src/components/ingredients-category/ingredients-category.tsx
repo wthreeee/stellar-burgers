@@ -1,4 +1,5 @@
 import { forwardRef, useMemo } from 'react';
+import { useAppSelector } from '../../services/hooks';
 import { TIngredientsCategoryProps } from './type';
 import { TIngredient } from '@utils-types';
 import { IngredientsCategoryUI } from '../ui/ingredients-category';
@@ -8,11 +9,10 @@ export const IngredientsCategory = forwardRef<
   TIngredientsCategoryProps
 >(({ title, titleRef, ingredients }, ref) => {
   /** TODO: взять переменную из стора */
+  const s = useAppSelector((st: any) => st.constructor);
   const burgerConstructor = {
-    bun: {
-      _id: ''
-    },
-    ingredients: []
+    bun: s?.bun,
+    ingredients: s?.ingredients || []
   };
 
   const ingredientsCounters = useMemo(() => {

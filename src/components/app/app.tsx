@@ -4,10 +4,10 @@ import styles from './app.module.css';
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { useDispatch, useSelector } from 'react-redux';
-import type { AppDispatch, RootState } from '../../services/store';
+import { useAppDispatch, useAppSelector } from '../../services/hooks';
 
 import { fetchIngredients } from '../../services/slices/ingredientsSlice';
+import { fetchUser } from '../../services/slices/authSlice';
 
 import { AppHeader, Modal, IngredientDetails, OrderInfo } from '@components';
 import { Preloader } from '@ui';
@@ -27,20 +27,19 @@ import {
 import { ProtectedRoute } from '../protected-route/protected-route';
 
 const App = () => {
-  const dispatch = useDispatch<AppDispatch>();
+  const dispatch = useAppDispatch();
 
-  const ingredients = useSelector(
-    (state: RootState) => state.ingredients.ingredients
+  const ingredients = useAppSelector((state) => state.ingredients.ingredients);
+
+  const isIngredientsLoading = useAppSelector(
+    (state) => state.ingredients.isLoading
   );
 
-  const isIngredientsLoading = useSelector(
-    (state: RootState) => state.ingredients.isLoading
-  );
-
-  const error = useSelector((state: any) => state.ingredients.error);
+  const error = useAppSelector((state: any) => state.ingredients.error);
 
   useEffect(() => {
     dispatch(fetchIngredients());
+    dispatch(fetchUser());
   }, [dispatch]);
 
   return (
