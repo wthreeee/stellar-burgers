@@ -12,9 +12,6 @@ import { TBurgerIngredientUIProps } from './type';
 
 export const BurgerIngredientUI: FC<TBurgerIngredientUIProps> = memo(
   ({ ingredient, count, handleAdd, locationState }) => {
-    // Debug: log ingredient data coming from store/API
-    // eslint-disable-next-line no-console
-    console.log('BurgerIngredientUI ingredient:', ingredient, 'count:', count);
     const { image, price, name, _id } = ingredient as any;
     const displayName =
       typeof name === 'string' && /^\d+$/.test(name)

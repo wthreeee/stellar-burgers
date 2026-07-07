@@ -15,5 +15,5 @@ export const rootReducer = combineReducers({
   feeds: feedsReducer,
   ws: wsReducer,
   profile: profileReducer,
-  constructor: constructorReducer
+  burgerConstructor: constructorReducer
 });

@@ -26,13 +26,16 @@ export const createOrder = createAsyncThunk<any, void, { state: RootState }>(
   'orders/create',
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
-    const bun = state.constructor.bun;
-    const ingredients = state.constructor.ingredients;
+    const bun = state.burgerConstructor.bun;
+    const ingredients = state.burgerConstructor.ingredients;
     const ids = [] as string[];
     if (bun) {
       ids.push(bun._id);
+      ids.push(...ingredients.map((i) => i._id));
+      ids.push(bun._id);
+    } else {
+      ids.push(...ingredients.map((i) => i._id));
     }
-    ingredients.forEach((i) => ids.push(i._id));
 
     const res = await orderBurgerApi(ids);
     return res;

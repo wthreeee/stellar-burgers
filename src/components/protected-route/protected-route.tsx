@@ -13,9 +13,10 @@ export const ProtectedRoute: FC<TProtectedRouteProps> = ({
 }) => {
   const location = useLocation();
   const isAuth = useAppSelector((s) => s.auth.isAuth);
+  const from = (location.state as { from?: Location })?.from?.pathname || '/';
 
   if (onlyUnAuth && isAuth) {
-    return <Navigate to='/' replace />;
+    return <Navigate to={from} replace />;
   }
 
   if (!onlyUnAuth && !isAuth) {

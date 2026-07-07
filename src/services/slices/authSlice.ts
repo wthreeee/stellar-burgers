@@ -1,9 +1,10 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
 import {
   getUserApi,
   loginUserApi,
   registerUserApi,
-  logoutApi
+  logoutApi,
+  updateUserApi
 } from '../../utils/burger-api';
 import { TUser } from '../../utils/types';
 import { setCookie, deleteCookie } from '../../utils/cookie';
@@ -39,6 +40,14 @@ export const register = createAsyncThunk(
   'auth/register',
   async (data: { email: string; name: string; password: string }) => {
     const res = await registerUserApi(data);
+    return res;
+  }
+);
+
+export const updateUser = createAsyncThunk(
+  'auth/updateUser',
+  async (data: { name?: string; email?: string; password?: string }) => {
+    const res = await updateUserApi(data);
     return res;
   }
 );
@@ -79,12 +88,11 @@ const authSlice = createSlice({
       state.isLoading = false;
       const payload: any = action.payload;
       if (payload && payload.success) {
-        // save tokens
         try {
           localStorage.setItem('refreshToken', payload.refreshToken);
           const rawAccessToken = payload.accessToken.replace(/^Bearer\s+/i, '');
           setCookie('accessToken', rawAccessToken);
-        } catch (e) {}
+        } catch {}
         state.user = payload.user;
         state.isAuth = true;
       }
@@ -106,7 +114,7 @@ const authSlice = createSlice({
           localStorage.setItem('refreshToken', payload.refreshToken);
           const rawAccessToken = payload.accessToken.replace(/^Bearer\s+/i, '');
           setCookie('accessToken', rawAccessToken);
-        } catch (e) {}
+        } catch {}
         state.user = payload.user;
         state.isAuth = true;
       }
@@ -116,12 +124,28 @@ const authSlice = createSlice({
       state.error = action.error.message || null;
     });
 
+    builder.addCase(updateUser.pending, (state) => {
+      state.isLoading = true;
+      state.error = null;
+    });
+    builder.addCase(updateUser.fulfilled, (state, action) => {
+      state.isLoading = false;
+      const payload: any = action.payload;
+      if (payload && payload.success) {
+        state.user = payload.user;
+        state.isAuth = true;
+      }
+    });
+    builder.addCase(updateUser.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.error.message || null;
+    });
+
     builder.addCase(logout.fulfilled, (state) => {
-      // clear tokens and user
       try {
         localStorage.removeItem('refreshToken');
         deleteCookie('accessToken');
-      } catch (e) {}
+      } catch {}
       state.user = null;
       state.isAuth = false;
     });

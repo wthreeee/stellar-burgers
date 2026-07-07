@@ -1,24 +1,28 @@
 import { FC, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { TConstructorIngredient } from '@utils-types';
 import { BurgerConstructorUI } from '@ui';
 import { useAppDispatch, useAppSelector } from '../../services/hooks';
 import { createOrder } from '../../services/slices/ordersSlice';
-import {
-  clearConstructor,
-  removeIngredient
-} from '../../services/slices/constructorSlice';
+import { clearConstructor } from '../../services/slices/constructorSlice';
 
 export const BurgerConstructor: FC = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
-  const bun = useAppSelector((s) => s.constructor?.bun ?? null);
-  const ingredients = useAppSelector((s) => s.constructor?.ingredients ?? []);
+  const bun = useAppSelector((s) => s.burgerConstructor.bun);
+  const ingredients = useAppSelector((s) => s.burgerConstructor.ingredients);
+  const isAuth = useAppSelector((s) => s.auth.isAuth);
 
   const orderRequest = useAppSelector((s) => s.orders.isLoading);
   const orderModalData = useAppSelector((s) => s.orders.lastOrder);
 
   const onOrderClick = () => {
     if (!bun || orderRequest) return;
+    if (!isAuth) {
+      navigate('/login', { replace: true, state: { from: { pathname: '/' } } });
+      return;
+    }
     dispatch(createOrder());
   };
 
