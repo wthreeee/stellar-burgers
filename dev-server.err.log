@@ -1,0 +1,6 @@
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: [36mhttp://localhost:4000/[39m
+<i> [webpack-dev-server] Content not from webpack is served from '[36mC:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\dist[39m' directory
+<i> [webpack-dev-server] 404s will fallback to '[36m/index.html[39m'
+<i> [webpack-dev-middleware] wait until bundle finished: /
+<i> [webpack-dev-middleware] wait until bundle finished: /main.5dbf35bd42b09f2255d8.hot-update.json

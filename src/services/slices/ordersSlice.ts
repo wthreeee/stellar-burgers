@@ -10,7 +10,7 @@ interface OrdersState {
   totalToday: number;
   isLoading: boolean;
   error: string | null;
-  lastOrder: any | null;
+  lastOrder: { number: number } | null;
 }
 
 const initialState: OrdersState = {
@@ -38,6 +38,7 @@ export const createOrder = createAsyncThunk<any, void, { state: RootState }>(
     }
 
     const res = await orderBurgerApi(ids);
+    thunkAPI.dispatch(clearConstructor());
     return res;
   }
 );
@@ -53,7 +54,11 @@ export const fetchUserOrders = createAsyncThunk(
 const ordersSlice = createSlice({
   name: 'orders',
   initialState,
-  reducers: {},
+  reducers: {
+    clearOrderModalData(state) {
+      state.lastOrder = null;
+    }
+  },
   extraReducers: (builder) => {
     builder.addCase(createOrder.pending, (state) => {
       state.isLoading = true;
@@ -61,7 +66,7 @@ const ordersSlice = createSlice({
     });
     builder.addCase(createOrder.fulfilled, (state, action) => {
       state.isLoading = false;
-      state.lastOrder = action.payload;
+      state.lastOrder = action.payload.order;
       state.error = null;
     });
     builder.addCase(createOrder.rejected, (state, action) => {
@@ -85,4 +90,5 @@ const ordersSlice = createSlice({
   }
 });
 
+export const { clearOrderModalData } = ordersSlice.actions;
 export default ordersSlice.reducer;
