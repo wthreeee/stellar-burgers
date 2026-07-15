@@ -12,7 +12,11 @@ import { TBurgerIngredientUIProps } from './type';
 
 export const BurgerIngredientUI: FC<TBurgerIngredientUIProps> = memo(
   ({ ingredient, count, handleAdd, locationState }) => {
-    const { image, price, name, _id } = ingredient;
+    const { image, price, name, _id } = ingredient as any;
+    const displayName =
+      typeof name === 'string' && /^\d+$/.test(name)
+        ? JSON.stringify(ingredient)
+        : name;
 
     return (
       <li className={styles.container}>
@@ -27,7 +31,9 @@ export const BurgerIngredientUI: FC<TBurgerIngredientUIProps> = memo(
             <p className='text text_type_digits-default mr-2'>{price}</p>
             <CurrencyIcon type='primary' />
           </div>
-          <p className={`text text_type_main-default ${styles.text}`}>{name}</p>
+          <p className={`text text_type_main-default ${styles.text}`}>
+            {displayName}
+          </p>
         </Link>
         <AddButton
           text='Добавить'
