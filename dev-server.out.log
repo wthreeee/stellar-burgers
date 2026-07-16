@@ -2,177 +2,30 @@
 > react-canonical@0.1.0 start
 > webpack serve --mode=development
 
-assets by info 324 KiB [1m[32m[immutable][39m[22m
-  assets by path [1m[32m*.woff[39m[22m 146 KiB
-    asset [1m[32m3914674f1cb2335acf26.woff[39m[22m 64.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Bold.woff] (auxiliary name: main)
-    asset [1m[32mf52bee61d00ce995b89f.woff[39m[22m 62.9 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Regular.woff] (auxiliary name: main)
-    asset [1m[32m77ad7fc2baffd9305538.woff[39m[22m 19 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/iceland.woff] (auxiliary name: main)
-  assets by path [1m[32m*.woff2[39m[22m 115 KiB
-    asset [1m[32mc232d532ea5a5189a278.woff2[39m[22m 50.9 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Bold.woff2] (auxiliary name: main)
-    asset [1m[32mb60380891bcf2eb241ca.woff2[39m[22m 49.6 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Regular.woff2] (auxiliary name: main)
-    asset [1m[32m4ae67a017a5ff82bbbb7.woff2[39m[22m 15 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/iceland.woff2] (auxiliary name: main)
-  asset [1m[32m05f77629658815c65e3f.svg[39m[22m 62.8 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [from: src/images/done.svg] (auxiliary name: main)
-asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-asset [1m[32mindex.html[39m[22m 481 bytes [1m[32m[emitted][39m[22m
+assets by info 324 KiB [immutable]
+  assets by path *.woff 146 KiB
+    asset 3914674f1cb2335acf26.woff 64.2 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Bold.woff] (auxiliary name: main)
+    asset f52bee61d00ce995b89f.woff 62.9 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Regular.woff] (auxiliary name: main)
+    asset 77ad7fc2baffd9305538.woff 19 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/iceland.woff] (auxiliary name: main)
+  assets by path *.woff2 115 KiB
+    asset c232d532ea5a5189a278.woff2 50.9 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Bold.woff2] (auxiliary name: main)
+    asset b60380891bcf2eb241ca.woff2 49.6 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/JetBrainsMono-Regular.woff2] (auxiliary name: main)
+    asset 4ae67a017a5ff82bbbb7.woff2 15 KiB [emitted] [immutable] [from: node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/iceland.woff2] (auxiliary name: main)
+  asset 05f77629658815c65e3f.svg 62.8 KiB [emitted] [immutable] [from: src/images/done.svg] (auxiliary name: main)
+asset bundle.js 2.92 MiB [emitted] (name: main)
+asset index.html 481 bytes [emitted]
 runtime modules 28.7 KiB 15 modules
-orphan modules 16.1 KiB [1m[33m[orphan][39m[22m 10 modules
-modules by path [1m./node_modules/[39m[22m 2.02 MiB (javascript) 262 KiB (asset)
+orphan modules 16.1 KiB [orphan] 10 modules
+modules by path ./node_modules/ 2.02 MiB (javascript) 262 KiB (asset)
   javascript modules 2.02 MiB 230 modules
   asset modules 252 bytes (javascript) 262 KiB (asset)
-    modules by path [1m./node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/*.woff2[39m[22m 126 bytes (javascript) 115 KiB (asset) 3 modules
-    modules by path [1m./node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/*.woff[39m[22m 126 bytes (javascript) 146 KiB (asset) 3 modules
-modules by path [1m./src/[39m[22m 195 KiB (javascript) 62.8 KiB (asset)
-  modules by path [1m./src/components/[39m[22m 139 KiB 127 modules
-  modules by path [1m./src/pages/[39m[22m 22.4 KiB 21 modules
-  modules by path [1m./src/services/[39m[22m 22.7 KiB 10 modules
-  modules by path [1m./src/utils/*.ts[39m[22m 11 KiB 2 modules
-  [1m./src/index.tsx[39m[22m 605 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/images/done.svg[39m[22m 42 bytes (javascript) 62.8 KiB (asset) [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.89.0 compiled [1m[32msuccessfully[39m[22m in 9859 ms
-assets by status 325 KiB [1m[32m[cached][39m[22m 8 assets
-assets by status 2.92 MiB [1m[32m[emitted][39m[22m
-  asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-  asset [1m[32mmain.5468727e6198a44d30c2.hot-update.js[39m[22m 8.04 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main)
-  asset [1m[32mmain.5468727e6198a44d30c2.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
-Entrypoint [1mmain[39m[22m 2.92 MiB (324 KiB) = [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32mmain.5468727e6198a44d30c2.hot-update.js[39m[22m 8.04 KiB 7 auxiliary assets
-cached modules 2.21 MiB (javascript) 324 KiB (asset) [1m[32m[cached][39m[22m 403 modules
-runtime modules 28.7 KiB 15 modules
-javascript modules 11.9 KiB
-  modules by path [1m./src/services/[39m[22m 6.24 KiB
-    [1m./src/services/rootReducer.ts[39m[22m 659 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/services/slices/ordersSlice.ts[39m[22m 5.59 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  modules by path [1m./src/components/[39m[22m 4.91 KiB
-    [1m./src/components/burger-constructor/burger-constructor.tsx[39m[22m 1.67 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m [1m[31m[1 error][39m[22m
-    [1m./src/components/order-info/order-info.tsx[39m[22m 3.25 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/pages/profile-orders/profile-orders.tsx[39m[22m 749 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-
-[1m[33mWARNING[39m[22m in [1m[eslint] 
-C:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\services\slices\ordersSlice.ts
-   7:24  warning  Insert `␍`  prettier/prettier
-   8:20  warning  Insert `␍`  prettier/prettier
-   9:17  warning  Insert `␍`  prettier/prettier
-  10:22  warning  Insert `␍`  prettier/prettier
-  11:22  warning  Insert `␍`  prettier/prettier
-  12:24  warning  Insert `␍`  prettier/prettier
-  13:40  warning  Insert `␍`  prettier/prettier
-  14:2   warning  Insert `␍`  prettier/prettier
-  67:64  warning  Insert `␍`  prettier/prettier
-  68:31  warning  Insert `␍`  prettier/prettier
-  69:46  warning  Insert `␍`  prettier/prettier
-  70:26  warning  Insert `␍`  prettier/prettier
-  71:8   warning  Insert `␍`  prettier/prettier
-
-✖ 13 problems (0 errors, 13 warnings)
-  0 errors and 13 warnings potentially fixable with the `--fix` option.
-[39m[22m
-
-[1m[31mERROR[39m[22m in [1mC:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\components\burger-constructor\burger-constructor.tsx[39m[22m
-[1m./src/components/burger-constructor/burger-constructor.tsx[39m[22m [1m[32m52:6-20[39m[22m
-[1m[tsl] [1m[31mERROR[39m[22m[1m in C:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\components\burger-constructor\burger-constructor.tsx(52,7)
-      TS2322: Type '{ number: number; } | null' is not assignable to type 'TOrder | null'.
-  Type '{ number: number; }' is missing the following properties from type 'TOrder': _id, status, name, createdAt, and 2 more.[39m[22m
-ts-loader-default_e3b0c44298fc1c14
- @ ./src/components/burger-constructor/index.ts 1:0-57 1:0-57
- @ ./src/components/index.ts 2:0-37 2:0-37
- @ ./src/components/app/app.tsx 8:0-77 26:66-75 26:1408-1417 26:1481-1498 26:1602-1611 26:1781-1786 26:1916-1925 26:1992-1997 26:2157-2174 26:2281-2286 26:2416-2425
- @ ./src/index.tsx 6:0-39 10:191-194
-
-webpack 5.89.0 compiled with [1m[31m1 error[39m[22m and [1m[33m1 warning[39m[22m in 1855 ms
-assets by status 325 KiB [1m[32m[cached][39m[22m 8 assets
-assets by status 2.92 MiB [1m[32m[emitted][39m[22m
-  asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-  asset [1m[32mmain.699d55b9775d5178e991.hot-update.js[39m[22m 858 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main)
-  asset [1m[32mmain.699d55b9775d5178e991.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
-Entrypoint [1mmain[39m[22m 2.92 MiB (324 KiB) = [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32mmain.699d55b9775d5178e991.hot-update.js[39m[22m 858 bytes 7 auxiliary assets
-cached modules 2.22 MiB (javascript) 324 KiB (asset) [1m[32m[cached][39m[22m 407 modules
-runtime modules 28.7 KiB 15 modules
-[1m./src/components/ui/burger-constructor/burger-constructor.tsx[39m[22m 2.98 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-
-[1m[33mWARNING[39m[22m in [1m[eslint] 
-C:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\services\slices\ordersSlice.ts
-   7:24  warning  Insert `␍`  prettier/prettier
-   8:20  warning  Insert `␍`  prettier/prettier
-   9:17  warning  Insert `␍`  prettier/prettier
-  10:22  warning  Insert `␍`  prettier/prettier
-  11:22  warning  Insert `␍`  prettier/prettier
-  12:24  warning  Insert `␍`  prettier/prettier
-  13:40  warning  Insert `␍`  prettier/prettier
-  14:2   warning  Insert `␍`  prettier/prettier
-  67:64  warning  Insert `␍`  prettier/prettier
-  68:31  warning  Insert `␍`  prettier/prettier
-  69:46  warning  Insert `␍`  prettier/prettier
-  70:26  warning  Insert `␍`  prettier/prettier
-  71:8   warning  Insert `␍`  prettier/prettier
-
-✖ 13 problems (0 errors, 13 warnings)
-  0 errors and 13 warnings potentially fixable with the `--fix` option.
-[39m[22m
-
-webpack 5.89.0 compiled with [1m[33m1 warning[39m[22m in 911 ms
-assets by status 325 KiB [1m[32m[cached][39m[22m 8 assets
-assets by status 2.92 MiB [1m[32m[emitted][39m[22m
-  asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-  asset [1m[32mmain.776e9a33ab777d87c7d2.hot-update.js[39m[22m 3.82 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main)
-  asset [1m[32mmain.776e9a33ab777d87c7d2.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
-Entrypoint [1mmain[39m[22m 2.92 MiB (324 KiB) = [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32mmain.776e9a33ab777d87c7d2.hot-update.js[39m[22m 3.82 KiB 7 auxiliary assets
-cached modules 2.22 MiB (javascript) 324 KiB (asset) [1m[32m[cached][39m[22m 406 modules
-runtime modules 28.7 KiB 15 modules
-javascript modules 915 bytes
-  [1m./src/components/ui/modal/index.ts[39m[22m 35 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/components/ui/modal/modal.tsx[39m[22m 880 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-
-[1m[33mWARNING[39m[22m in [1m[eslint] 
-C:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\components\ui\modal\modal.tsx
-  17:77  warning  Insert `␍`  prettier/prettier
-  18:41  warning  Insert `␍`  prettier/prettier
-  19:20  warning  Insert `␍`  prettier/prettier
-
-C:\Users\wthre\OneDrive\Документы\GitHub\stellar-burgers\src\services\slices\ordersSlice.ts
-   7:24  warning  Insert `␍`  prettier/prettier
-   8:20  warning  Insert `␍`  prettier/prettier
-   9:17  warning  Insert `␍`  prettier/prettier
-  10:22  warning  Insert `␍`  prettier/prettier
-  11:22  warning  Insert `␍`  prettier/prettier
-  12:24  warning  Insert `␍`  prettier/prettier
-  13:40  warning  Insert `␍`  prettier/prettier
-  14:2   warning  Insert `␍`  prettier/prettier
-  67:64  warning  Insert `␍`  prettier/prettier
-  68:31  warning  Insert `␍`  prettier/prettier
-  69:46  warning  Insert `␍`  prettier/prettier
-  70:26  warning  Insert `␍`  prettier/prettier
-  71:8   warning  Insert `␍`  prettier/prettier
-
-✖ 16 problems (0 errors, 16 warnings)
-  0 errors and 16 warnings potentially fixable with the `--fix` option.
-[39m[22m
-
-webpack 5.89.0 compiled with [1m[33m1 warning[39m[22m in 788 ms
-assets by status 325 KiB [1m[32m[cached][39m[22m 8 assets
-assets by status 2.92 MiB [1m[32m[emitted][39m[22m
-  asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-  asset [1m[32mmain.5dbf35bd42b09f2255d8.hot-update.js[39m[22m 858 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main)
-  asset [1m[32mmain.5dbf35bd42b09f2255d8.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
-Entrypoint [1mmain[39m[22m 2.92 MiB (324 KiB) = [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32mmain.5dbf35bd42b09f2255d8.hot-update.js[39m[22m 858 bytes 7 auxiliary assets
-cached modules 2.21 MiB (javascript) 324 KiB (asset) [1m[32m[cached][39m[22m 403 modules
-runtime modules 28.7 KiB 15 modules
-javascript modules 11.9 KiB
-  modules by path [1m./src/services/[39m[22m 6.24 KiB
-    [1m./src/services/rootReducer.ts[39m[22m 659 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/services/slices/ordersSlice.ts[39m[22m 5.59 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  modules by path [1m./src/components/[39m[22m 4.91 KiB
-    [1m./src/components/burger-constructor/burger-constructor.tsx[39m[22m 1.67 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-    [1m./src/components/order-info/order-info.tsx[39m[22m 3.25 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/pages/profile-orders/profile-orders.tsx[39m[22m 749 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.89.0 compiled [1m[32msuccessfully[39m[22m in 939 ms
-assets by status 325 KiB [1m[32m[cached][39m[22m 8 assets
-assets by status 2.92 MiB [1m[32m[emitted][39m[22m
-  asset [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32m[emitted][39m[22m (name: main)
-  asset [1m[32mmain.258fbdd2c7411d3cb3a9.hot-update.js[39m[22m 858 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main)
-  asset [1m[32mmain.258fbdd2c7411d3cb3a9.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
-Entrypoint [1mmain[39m[22m 2.92 MiB (324 KiB) = [1m[32mbundle.js[39m[22m 2.92 MiB [1m[32mmain.258fbdd2c7411d3cb3a9.hot-update.js[39m[22m 858 bytes 7 auxiliary assets
-cached modules 2.22 MiB (javascript) 324 KiB (asset) [1m[32m[cached][39m[22m 406 modules
-runtime modules 28.7 KiB 15 modules
-javascript modules 915 bytes
-  [1m./src/components/ui/modal/index.ts[39m[22m 35 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-  [1m./src/components/ui/modal/modal.tsx[39m[22m 880 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.89.0 compiled [1m[32msuccessfully[39m[22m in 676 ms
+    modules by path ./node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/*.woff2 126 bytes (javascript) 115 KiB (asset) 3 modules
+    modules by path ./node_modules/@zlden/react-developer-burger-ui-components/dist/ui/fonts/*.woff 126 bytes (javascript) 146 KiB (asset) 3 modules
+modules by path ./src/ 196 KiB (javascript) 62.8 KiB (asset)
+  modules by path ./src/components/ 139 KiB 127 modules
+  modules by path ./src/pages/ 22.4 KiB 21 modules
+  modules by path ./src/services/ 22.7 KiB 10 modules
+  modules by path ./src/utils/*.ts 11 KiB 2 modules
+  ./src/index.tsx 605 bytes [built] [code generated]
+  ./src/images/done.svg 42 bytes (javascript) 62.8 KiB (asset) [built] [code generated]
+webpack 5.89.0 compiled successfully in 6956 ms
