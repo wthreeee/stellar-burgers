@@ -7,10 +7,10 @@ const mainId = '643d69a5c3f7b9001cfa0941';
 
 const useHarMocks = async (page: Page) => {
   await page.routeFromHAR(path.join(harsPath, 'ingredients.har'), {
-    notFound: 'fallback'
+    url: '**/ingredients'
   });
   await page.routeFromHAR(path.join(harsPath, 'user.har'), {
-    notFound: 'fallback'
+    url: '**/auth/user'
   });
 };
 
@@ -90,7 +90,7 @@ test.describe('order creation', () => {
     });
     await useHarMocks(page);
     await page.routeFromHAR(path.join(harsPath, 'order.har'), {
-      notFound: 'fallback'
+      url: '**/orders'
     });
     await page.goto('/');
 
