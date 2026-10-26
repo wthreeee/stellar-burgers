@@ -2,10 +2,9 @@
 
 Одностраничное приложение космической бургерной: пользователь собирает бургер из ингредиентов, оформляет заказ и следит за ним в ленте и в личном кабинете.
 
-**🔗 Демо:** _ссылка появится после деплоя_
+**🔗 Демо:** [wthreeee.github.io/stellar-burgers](https://wthreeee.github.io/stellar-burgers/)
 
-<!-- Скриншот: сохраните картинку в docs/screenshot.png и раскомментируйте строку ниже -->
-<!-- ![Stellar Burgers](docs/screenshot.png) -->
+![Stellar Burgers](docs/screenshot.png)
 
 ## Возможности
 
