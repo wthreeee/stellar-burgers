@@ -1,3 +1,4 @@
+/// <reference types="webpack-env" />
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter
+        basename={__webpack_public_path__}
         future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
       >
         <App />
